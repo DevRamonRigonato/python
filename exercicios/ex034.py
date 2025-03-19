@@ -1,6 +1,6 @@
 altura = float(input('Digite sua altura: '))
 peso = float(input('Digite seu peso: '))
-imc = peso / (altura**2)
+imc = peso / (altura**2) # Calculo de Índice de massa corporal
 
 if 18.5 <= imc < 25:
     print('Entre 18.5 e 25: Peso ideal')
