@@ -9,4 +9,4 @@ if r1 < r2 + r3 and r2 < r1 + r3 and r3 < r1 + r2: # if r1 + r2 > r3 and r1 + r3
     elif r1 != r2 and r1 != r3 and r2 != r3:
         print('Os segmentos acima PODEM FORMAR um triângulo ESCALENO!')
 else:
-    print('Não PODEM FORMAR triãngulo')
+    print('\033[0;31mNão PODEM FORMAR triãngulo\033[m')
