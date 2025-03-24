@@ -20,15 +20,15 @@ nascimento = int(input('Ano de nascimento: '))
 idade = atual - nascimento
 print('O atleta tem {} anos.'.format(idade))
 if idade <= 9:
-    print('Classificação: MIRIM')
+    print('Classificação: \033[032mMIRIM\033[m')
 elif idade <= 14:
-    print('Classificação: INFANTIL')
+    print('Classificação: \033[033mINFANTIL\033[m')
 elif idade <= 19:
-    print('Classificação: JÚNIOR')
+    print('Classificação: \033[034mJÚNIOR\033[m')
 elif idade <= 25:
-    print('Classificação: SÊNIOR')
+    print('Classificação: \033[035mSÊNIOR\033[m')
 else:
-    print('Classificaçao: MASTER!')
+    print('Classificaçao: \033[031mMASTER!\033[m')
 
     
     
