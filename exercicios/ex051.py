@@ -7,9 +7,9 @@ inverso = junto[::-1] #Macetizinho sem usar o for
 #    inverso += junto[letra]                             #INVERSO
 print('O inverso de {} é {}'.format(junto, inverso))
 if inverso == junto:
-    print('Temos um palíndromo!')
+    print('\033[0;32mTemos um palíndromo!\033[m')
 else:
-    print('A frase digitada não é um palíndromo!')
+    print('\033[0;31mA frase digitada não é um palíndromo!\033[m')
 
 
 
