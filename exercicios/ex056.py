@@ -18,9 +18,9 @@ for p in range(1, 5):
         tot_mulher += 1 #tot_mulher = tot_mulher + 1
 
 soma_idade = media_idade / 4
-print('A média idade do grupo é {} anos'.format(soma_idade))
-print('O homem mais velho chama {} e tem {} anos de idade.'.format(velhohomem, homemidade_velho))
-print('Tem no total {} mulheres menores de idade.'.format(tot_mulher))
+print('\033[0;32mA média idade do grupo é {} anos\033[m'.format(soma_idade))
+print('\033[0;32mO homem mais velho chama {} e tem {} anos de idade.\033[m'.format(velhohomem, homemidade_velho))
+print('\033[0;32mTem no total {} mulheres menores de idade.\033[m'.format(tot_mulher))
 
 
 
