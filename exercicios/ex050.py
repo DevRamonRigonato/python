@@ -9,6 +9,6 @@ for c in range(1, num + 1):
     print('{}'.format(c), end=' ')
 print('\n\033[mO número {} foi divisível {} vezes'.format(num, tot))
 if tot == 2:
-    print('E por isso ele é PRIMO!')
+    print('\033[0;32mE por isso ele é PRIMO!\033[m')
 else:
     print('E por isso ele NÃO É PRIMO!')
