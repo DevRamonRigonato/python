@@ -20,7 +20,6 @@ while opcao != 5:
         if n1 > n2:
             maior = n1
         else:
-            n1 < n2
             maior = n2
         print('Entre {} e {} o maior valor é {}'.format(n1, n2, maior))
     elif opcao == 4:
