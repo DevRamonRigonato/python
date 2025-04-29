@@ -15,4 +15,7 @@ y = 10
 resultado = int(x) + y
 print(resultado)'''
 
-
+num = int(input('Digite um número: '))
+s = num + 1
+a = num - 1
+print(f'Analisando o valor {num} seu antecessor é {a} e o sucessor é {s}')
