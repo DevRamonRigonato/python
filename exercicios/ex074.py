@@ -15,7 +15,80 @@ y = 10
 resultado = int(x) + y
 print(resultado)'''
 
-num = int(input('Digite um número: '))
+'''num = int(input('Digite um número: '))
 s = num + 1
 a = num - 1
-print(f'Analisando o valor {num} seu antecessor é {a} e o sucessor é {s}')
+print(f'Analisando o valor {num} seu antecessor é {a} e o sucessor é {s}')'''
+
+'''num = int(input('Digite um número: '))
+dobro = num * 2
+triplo = num * 3
+raiz = num ** (1/2)
+print(f'O drobro de {num} é {dobro}.')
+print(f'O triplo de {num} é {triplo}.')
+print(f'A raiz quadrada de {num} é {raiz:.2f}.')'''
+
+'''n1 = float(input('Digite a primeira nota: '))
+n2 = float(input('Digite a segunda nota: '))
+media = (n1 + n2) / 2
+print(f'A média entre {n1} e {n2} é igual a {media}')'''
+
+'''num = float(input('Uma distância em metros: '))
+km = num / 1000
+hm = num / 100
+dam = num / 10
+dm = num * 10
+cm = num * 100
+mm = num * 1000
+print(f'A medida de {num}m corresponde a {km}km \n{hm}hm \n{dam}dam \n{dm:.0f}dm \n{cm:.0f}cm \n{mm:.0f}mm')'''
+
+'''print('=' * 20)  
+print('{:^20}'.format('TABUADA'))
+print('=' * 20) 
+
+num = int(input('Digite um número: '))
+print(f'{num} x 1 = {num *1}')
+print(f'{num} x 2 = {num *2}')
+print(f'{num} x 3 = {num *3}')
+print(f'{num} x 4 = {num *4}')
+print(f'{num} x 5 = {num *5}')
+print(f'{num} x 6 = {num *6}')
+print(f'{num} x 7 = {num *7}')
+print(f'{num} x 8 = {num *8}')
+print(f'{num} x 9 = {num *9}')
+print(f'{num} x 10 = {num *10}')'''
+
+
+'''num = float(input('Quanto dinheiro você tem na carteira? R$'))
+cotacao = num / 5.68
+print(f'Com R${num} você pode comprar US${cotacao}')'''
+
+'''largura = float(input('Largura da parede: '))
+altura = float(input('Altura da parece: '))
+area = largura * altura
+print(f'Sua parede tem a dimensão de {largura} e {altura} e a sua área é de {area}m')
+tinta = area / 2
+print(f'Para pintar essa parede, vocè precisará de {tinta}l de tinta')'''
+
+'''preço = float(input('Qual o preço do produto? R$'))
+novo =  preço - (preço * 5 / 100)
+print(f'O pruduto que custava R${preço}, na promoção com desconto de 5% vai custar R$ R${preço}')'''
+
+'''num = float(input('Qual é o salario do funcionario? R$'))
+salario =  num + (num * 15 / 100)
+print(f'Um funcionario que ganhava R${num} com 15% de aumento, passa a receber R${salario}')'''
+
+'''c = float(input('Informe a temperatura em °C: '))
+f = ((9*c)/5) + 32
+print(f'A temperatura de {c} corresponde a {f}')'''
+
+dias = int(input('Quantos dias alugados? '))
+km = float(input('Quantos Km rodados? '))
+total = (dias * 60) + (km * 0.15) 
+print(f'O total a pagar é de R${total}')
+
+
+
+
+
+
