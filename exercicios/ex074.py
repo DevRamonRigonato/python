@@ -82,10 +82,55 @@ print(f'Um funcionario que ganhava R${num} com 15% de aumento, passa a receber R
 f = ((9*c)/5) + 32
 print(f'A temperatura de {c} corresponde a {f}')'''
 
-dias = int(input('Quantos dias alugados? '))
+'''dias = int(input('Quantos dias alugados? '))
 km = float(input('Quantos Km rodados? '))
 total = (dias * 60) + (km * 0.15) 
-print(f'O total a pagar é de R${total}')
+print(f'O total a pagar é de R${total}')'''
+
+'''import math #from math import sqrt, floor
+num = int(input('Digite um número: '))
+raiz = math.sqrt(num)
+print(f'A raiz de {num} é igual a {math.ceil(raiz)}')'''
+'''from math import trunc
+n = float(input('Digite um valor: '))
+valor = trunc(n)
+print(f'O valor digitado foi {n} e a sua porção inteira é {valor}')'''
+
+'''from math import hypot
+opo = float(input('Comprimento do cateto oposto: '))
+adj = float(input('Comprimento do cateto adjacente: '))
+hipo = (opo ** 2 + adj **2) ** 0.5 # hypot(co, ca)
+print(f'A hipotenusa vai medir {hipo:.2f}')'''
+
+'''import math
+angulo = float(input('Digite o ângulo que você deseja: '))
+seno = math.sin(math.radians(angulo))
+print(f'O ângulo de {angulo} tem o SENO de {seno:.2f}')'''
+
+'''from random import choice
+n1 = str(input('Primeiro aluno: '))
+n2 = str(input('Segundo aluno: '))
+n3 = str(input('Terceiro aluno: '))
+n4 = str(input('Quarto aluno: '))
+lista = [n1, n2, n3, n4]
+sorteio = choice(lista)
+print(f'O aluno escolhido foi {sorteio}')'''
+
+from random import shuffle
+n1 = str(input('Primeiro aluno: '))
+n2 = str(input('Segundo aluno: '))
+n3 = str(input('Terceiro aluno: '))
+n4 = str(input('Quarto aluno: '))
+lista = [n1, n2, n3, n4]
+shuffle(lista)
+print(f'A ordem de apresentção será')
+print(lista)
+
+
+
+
+
+
 
 
 
