@@ -116,7 +116,7 @@ lista = [n1, n2, n3, n4]
 sorteio = choice(lista)
 print(f'O aluno escolhido foi {sorteio}')'''
 
-from random import shuffle
+'''from random import shuffle
 n1 = str(input('Primeiro aluno: '))
 n2 = str(input('Segundo aluno: '))
 n3 = str(input('Terceiro aluno: '))
@@ -124,12 +124,52 @@ n4 = str(input('Quarto aluno: '))
 lista = [n1, n2, n3, n4]
 shuffle(lista)
 print(f'A ordem de apresentção será')
-print(lista)
+print(lista)'''
 
 
+'''frase = 'Curso em Vídeo Python'
+print(frase[9::3])'''
+
+'''frase = 'Curso em Vídeo Python'
+dividido = frase.split()
+print(dividido[2] [3])'''
+
+'''nome = str(input('Digite seu nome completo: ')).strip()
+print('Analisando seu nome...')
+print(f'Seu nome em maiúsculas é {nome.upper()}')
+print(f'Seu nome em minúsculo é {nome.lower()}')
+print(f'Seu nome ao todo tem {len(nome) - nome.count(' ')} letras')
+print(f'Seu primeiro nome tem {nome.find(' ')} letras')'''
+
+'''n = int(input('Informe um número: '))
+u = n // 1 % 10
+d = n // 10 % 10
+c = n // 100 % 10
+m = n // 1000 % 10
+print(f'Unidade: {u}')
+print(f'Dezana: {d}')
+print(f'Centena: {c}')
+print(f'Milhar: {m}')'''
+
+'''nome = str(input('Em que cidade você nasceu? ')).strip()
+cidade = nome[:5].upper() == 'SANTO'
+print(cidade)'''
 
 
+'''n = str(input('Qual é seu nome completo? ')).strip()
+nome = 'RIGONATO' in n.upper()
+print(f'Seu nome tem Rigonato? {nome}')'''
 
+'''frase = input('Digite uma frase: ').strip().upper()
+print(f'A letra A aparece {frase.count('A')} vezes na frase.')
+print(f'A primeira letra A apareceu na posição {frase.find('A') + 1}')
+print(f'A última letra apareceu na posição {frase.rfind('A') + 1}')'''
+
+n = str(input('Digite seu nome completo: ')).strip()
+nome = n.split()
+print('Muito prazer em te conhecer!')
+print(f'Seu primeiro nome é {nome[0]}')
+print(f'Seu último nome é {nome[len(nome) - 1]}')
 
 
 
