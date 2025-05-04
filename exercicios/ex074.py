@@ -165,11 +165,28 @@ print(f'A letra A aparece {frase.count('A')} vezes na frase.')
 print(f'A primeira letra A apareceu na posição {frase.find('A') + 1}')
 print(f'A última letra apareceu na posição {frase.rfind('A') + 1}')'''
 
-n = str(input('Digite seu nome completo: ')).strip()
+'''n = str(input('Digite seu nome completo: ')).strip()
 nome = n.split()
 print('Muito prazer em te conhecer!')
 print(f'Seu primeiro nome é {nome[0]}')
-print(f'Seu último nome é {nome[len(nome) - 1]}')
+print(f'Seu último nome é {nome[len(nome) - 1]}') '''
+
+
+'''from random import choice
+n1 = str(input('Digite o nome do Primeiro aluno: ')).strip().upper()
+n2 = str(input('Digite o nome do Segundo aluno: ')).strip().upper()
+n3 = str(input('Digite o nome do Terceiro aluno: ')).strip().upper()
+n4 = str(input('Digite o nome do Quarto aluno nome: ')).strip().upper()
+lista = [n1, n2, n3, n4]
+sorteio = choice(lista)
+print(f'O nome do aluno sorteado é {sorteio}')'''
+
+
+
+
+
+
+
 
 
 
