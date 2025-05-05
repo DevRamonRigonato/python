@@ -181,6 +181,46 @@ lista = [n1, n2, n3, n4]
 sorteio = choice(lista)
 print(f'O nome do aluno sorteado é {sorteio}')'''
 
+'''from random import randint
+print('-=' * 30)
+print('Vou pensar em um número entre 0 e 5. Tente advinhar...')
+print('-=' * 30)
+computador = randint(0, 5)
+jogador = int(input('Em que número eu pensei? '))
+if jogador == computador:
+    print('PARABÉNS! Você conseguiu me VENCER!')
+else:
+    print(f'QUE PENA! Eu pensei no número {computador} e não no {jogador}')'''
+
+   
+
+'''velocidade = int(input('Qual a velocidade atual do carro? '))
+muta = (velocidade - 80) * 7
+if velocidade > 80:
+    print(f'''
+'''MULTADO! Você excedeu o limite permitido que é de 80Km/h
+Você deve pagar uma multa de R${muta}!
+Tenha um bom dia e dirija com Segurança!'''
+''')
+else:
+    print('Tenha um BOM DIA e dirija com segurança!!!')'''
+
+'''n = int(input('Me diga um número qualquer: '))
+if n % 2 == 0:
+    print(f'O número {n} é par')
+else:
+    print(f'O número {n} é ímpar')'''
+
+distancia = float(input('Qual é a distância da sua viagem? '))
+print(f'Você está prestes a começar uma viagem de {distancia}Km.')
+if distancia <= 200:
+    preço = distancia * 0.50
+else:
+    preço = distancia * 0.45
+print(f'E o preço da sua passagem será de R${preço:.2f}')
+
+
+
 
 
 
