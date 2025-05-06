@@ -211,13 +211,49 @@ if n % 2 == 0:
 else:
     print(f'O número {n} é ímpar')'''
 
-distancia = float(input('Qual é a distância da sua viagem? '))
+'''distancia = float(input('Qual é a distância da sua viagem? '))
 print(f'Você está prestes a começar uma viagem de {distancia}Km.')
 if distancia <= 200:
     preço = distancia * 0.50
 else:
     preço = distancia * 0.45
-print(f'E o preço da sua passagem será de R${preço:.2f}')
+print(f'E o preço da sua passagem será de R${preço:.2f}')'''
+
+'''a = int(input('Primeiro valor: '))
+b = int(input('Segundo valor: '))
+c = int(input('Terceiro valor: '))
+menor = a
+if b<a and b<c:
+    menor = b
+if c<a and c<b:
+    menor = c
+maior = a
+if b>a and b>c:
+    maior = b
+if c>a and c>b:
+    maior = c
+print(f'O menor valor digitado foi {menor} e o maior {maior}')'''
+
+'''salario = float(input('Qual é o salário do funcionário? R$'))
+if salario <= 1250:
+    novo = salario + (salario * 15 / 100)
+else:
+    novo = salario + (salario * 10 / 100)
+print(f'Quem ganhava R${salario:.2F} passa a ganhar R${novo:.2f} agora.')'''
+
+r1 = float(input('Primeiro segmento: '))
+r2 = float(input('Segundo segmento: '))
+r3 = float(input('Terceiro segmento: '))
+if r1 < r2 + r3 and r2 < r1 + r3 and r3 < r1 + r2:
+    print('Os segmentos acima PODEM FORMA triângulo!')
+else:
+    print('Os segmentos NÃO PODEM FORMAR um triângulo! ')
+
+
+
+
+
+ 
 
 
 
