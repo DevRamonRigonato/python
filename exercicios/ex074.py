@@ -241,34 +241,86 @@ else:
     novo = salario + (salario * 10 / 100)
 print(f'Quem ganhava R${salario:.2F} passa a ganhar R${novo:.2f} agora.')'''
 
-r1 = float(input('Primeiro segmento: '))
+'''r1 = float(input('Primeiro segmento: '))
 r2 = float(input('Segundo segmento: '))
 r3 = float(input('Terceiro segmento: '))
 if r1 < r2 + r3 and r2 < r1 + r3 and r3 < r1 + r2:
     print('Os segmentos acima PODEM FORMA triângulo!')
 else:
-    print('Os segmentos NÃO PODEM FORMAR um triângulo! ')
+    print('Os segmentos NÃO PODEM FORMAR um triângulo! ')'''
+
+'''nome = str(input('Digite seu nome: ')).upper()
+if nome == 'RAMON':
+    print('Que nome celestial! Tenha um, BOM DIA!')
+elif nome in 'REBECA MILENA DANIELLE':
+    print('Voce É linda, quero muito vc!')
+elif nome == 'PAULO' or nome == 'DANILO' or nome == 'BOI':
+    print('Não gosto de voce')
+
+else:
+    print('Tenha um, BOM DIA!')'''
 
 
 
+'''casa = float(input('Digite o valor da casa: R$'))
+salario = float(input('Salario do comprador: R$'))
+ano = int(input('Em quantos anos vai pagar? '))
+prestação =  casa / (ano * 12)
+minimo = salario * 30 / 100
+print(f'Para pagar a casa de R${casa} em {ano} anos', end=' ')
+print(f'A prestação será de R${prestação:.2f}')
+if prestação <= minimo:
+    print('Empréstimo pode ser CONCEDIDO!')
+else:
+    print('EMPRÉSTIMO NEGADO!') '''
 
 
- 
+"""num = int(input('Digite um número inteiro: '))
+print('''Escolha uma das bases para conversão:
+      [ 1 ] converter para BINÁRIO 
+      [ 2 ] converter para OCTAL
+      [ 3 ] converter para HEXADECIMAL''')
+opção = int(input('Sua opção: '))
+if opção == 1:
+    print(f'{num} convertido pra BINÁRIO é igual a {bin(num)[2:]}')
+elif opção == 2:
+    print(f'{num} convertido para OCTAL é igual a {oct(num)[2:]}')
+elif opção == 3:
+    print(f'{num} convertido para HEXADECIMAL é igual a {hex(num)[2:]}')
+else:
+    print('Opção invalida. Tente novamente.')"""
 
+'''n1 = int(input('Primeiro número: '))
+n2 = int(input('Segundo número: '))
 
+if n1 > n2:
+    print('O primeiro valor é MAIOR')
+elif n2 > n1:
+    print('O segundo valor é MENOR')
+elif n1 == n2:
+    print('Os números são IGUAIS')'''
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+from datetime import date
+sexo = str(input('H ou F: ')).upper()
+if sexo in 'H':
+    print('continue')
+else:
+    if sexo in 'F':
+     print('Voce n precisa')
+    exit()
+ano = int(input('Ano de nascimento: '))
+ano_atual = date.today().year
+idade = ano_atual - ano
+print(f'Quem nasceu em {ano} tem {idade} anos em {ano_atual}')
+if idade == 18:
+    print('Você tem que se alistar IMEDIATAMENTE!')
+elif idade < 18:
+    saldo = 18 - idade
+    print(f'Ainda faltam {saldo} anos para o alistamento')
+    ano = ano_atual + saldo 
+    print(f'Seu alistamento será em {ano}')
+elif idade > 18:
+    saldo = idade - 18
+    print(f'Você ja deveria ter se alistado há {saldo} anos')
+    ano = ano_atual - saldo
+    print(f'Seu alistamento foi em {ano}')
