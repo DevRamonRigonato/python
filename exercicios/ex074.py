@@ -300,7 +300,7 @@ elif n2 > n1:
 elif n1 == n2:
     print('Os números são IGUAIS')'''
 
-from datetime import date
+'''from datetime import date
 sexo = str(input('H ou F: ')).upper()
 if sexo in 'H':
     print('continue')
@@ -323,4 +323,33 @@ elif idade > 18:
     saldo = idade - 18
     print(f'Você ja deveria ter se alistado há {saldo} anos')
     ano = ano_atual - saldo
-    print(f'Seu alistamento foi em {ano}')
+    print(f'Seu alistamento foi em {ano}')'''
+
+from datetime import date
+from time import sleep
+sexo = str(input('Digite o seu sexo. [H/M] ')).strip().upper()
+if sexo == 'H':
+    print('Está preparado para SOFRER CAMPEÃO?')
+elif sexo == 'M':
+    print('Donzela não são PERMITIDAS!')
+else:
+    print('COMANDO INVALIDO!!!')
+    exit()
+sleep(1)
+ano = int(input('Ano de nascimento: '))
+ano_atual = date.today().year
+idade = ano_atual - ano
+print(f'Quem nasceu em {ano} tem {idade} anos em {ano_atual}')
+if idade == 18:
+    print('Você tem que se alistar IMEDIATAMENTE!')
+elif idade < 18:
+    valor = 18 - idade
+    print(f'Ainda falta {valor} anos para seu ALISTAMENTO!')
+    anos =  ano_atual + valor
+    print(f'O ano do seu alistamento é {anos}')
+elif idade > 18:
+    valor = idade - 18
+    anos = ano_atual - valor
+    print(f'Você já deveria ter se ALISTADO A {valor}')
+    print(f'Deveria ter se alistado no a {anos}')
+
