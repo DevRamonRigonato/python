@@ -317,7 +317,7 @@ if idade == 18:
 elif idade < 18:
     saldo = 18 - idade
     print(f'Ainda faltam {saldo} anos para o alistamento')
-    ano = ano_atual + saldo 
+    ano = ano_at9ual + saldo 
     print(f'Seu alistamento será em {ano}')
 elif idade > 18:
     saldo = idade - 18
@@ -325,7 +325,7 @@ elif idade > 18:
     ano = ano_atual - saldo
     print(f'Seu alistamento foi em {ano}')'''
 
-from datetime import date
+'''from datetime import date
 from time import sleep
 sexo = str(input('Digite o seu sexo. [H/M] ')).strip().upper()
 if sexo == 'H':
@@ -351,5 +351,96 @@ elif idade > 18:
     valor = idade - 18
     anos = ano_atual - valor
     print(f'Você já deveria ter se ALISTADO A {valor}')
-    print(f'Deveria ter se alistado no a {anos}')
+    print(f'Deveria ter se alistado no a {anos}')'''
+
+'''nota1 = float(input('Primeira nota: '))
+nota2 = float(input('Segunda nota: '))
+media = (nota1 + nota2) / 2
+if media >= 7:
+    print(f'Tirando {nota1} e {nota2}, a média do aluno é {media} ')
+    print('O aluno está APROVADO!')
+elif media >= 5 and media < 7:
+    print(f'Tirando {nota1} e {nota2}, a média do aluno é {media}')
+    print('O aluno está em RECUPERAÇÃO!')
+else:
+    media < 5
+    print(f'Tirando {nota1} e {nota2}, a média do aluno é {media}')
+    print('O aluno está REPROVADO')'''
+
+'''from datetime import date
+ano_nasc = int(input('Ano de nascimento: '))
+ano_atual = date.today().year
+idade = ano_atual - ano_nasc
+print(f'O atleta tem {idade} anos.')
+if idade <= 9:
+    print('Classificação: MIRIM')
+elif idade <= 14:
+    print('Classificação: INFANTIL')
+elif idade <= 19:
+    print('Classificação: JÚNIOR')
+elif idade <= 25:
+    print('Classificação: SÊNIOR')
+else:
+    print('ANÇIÃO MASTER!!!')'''
+
+'''peso = float(input('Qual é seu peso? (Kg) '))
+altura = float(input('Qual é sia altura? (m) '))
+imc = peso / (altura ** 2)
+print(f'O IMC dessa pessoa é de {imc:.2f}')
+if imc >= 18.5 and imc <= 25:
+    print('PARABÉNS, você está na faixa de PESO NORMAL')
+elif imc < 18.5:
+    print('Você está ABAIXO DO PESO normal')
+elif imc >= 25 and imc <= 30:
+    print('Você está em SOBREPESO')
+elif imc >= 30 and imc <= 40:
+    print('Voçê está em OBESIDADE!')
+else:
+    print('Você está em OBESIDADE MÓRBIDA, cuidado!')'''
+
+print(f"{'===== LOJAS MONMON =====':<40}")
+preço = float(input('Preço das compras: R$'))
+print('''FORMAS DE PAGAMENTO
+      [ 1 ] á vista dinheiro/cheque
+      [ 2 ] á vista cartão
+      [ 3 ] 2x no cartão
+      [ 4 ] 3x ou mais no cartão
+      ''')
+
+opção = int(input('Qual é a opção? '))
+
+if opção == 1:
+    desconto = (preço * 10) / 100
+    comdescon = preço - desconto
+    print(f'Sua compra de R${preço:.2f} vai custar R${comdescon:.2f} no final.')
+elif opção == 2:
+    desconto = (preço * 5) / 100
+    condescon = preço - desconto
+    print(f'Sua compra de R${preço:.2f} vai custar R${condescon:.2f} no final.')
+elif opção == 3:
+    parcela = preço / 2
+    print(F'Sua compra de R${preço:.2f} em 2 vezes vai custar {parcela:.2f} reais SEM JUROS.') 
+elif opção == 4:
+    parcelas = int(input('Quantas parcelas? '))
+    if parcelas >= 3:
+        juros = preço * 20 / 100
+        total = preço + juros
+        valor_parcelas = total / parcelas
+        print(f'Sua compra será parcelada em {parcelas}x de R${valor_parcelas:.2f} COM JUROS.')
+        print(f'Sua compra de R${preço:.2f} vai custar R${total:.2f}')
+    if parcelas <= 2:
+        print('O maximo é de 3x parcelas DESCULPE ')
+else:
+    print('OPÇÃO INVÁLIDA!')
+
+
+
+
+
+
+
+
+
+
+
 
