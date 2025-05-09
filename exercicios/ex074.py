@@ -398,16 +398,16 @@ elif imc >= 30 and imc <= 40:
 else:
     print('Você está em OBESIDADE MÓRBIDA, cuidado!')'''
 
-print(f"{'===== LOJAS MONMON =====':<40}")
+"""print(f"{'===== LOJAS MONMON =====':<40}")
 preço = float(input('Preço das compras: R$'))
 print('''FORMAS DE PAGAMENTO
       [ 1 ] á vista dinheiro/cheque
       [ 2 ] á vista cartão
       [ 3 ] 2x no cartão
       [ 4 ] 3x ou mais no cartão
-      ''')
+      ''')"""
 
-opção = int(input('Qual é a opção? '))
+'''opção = int(input('Qual é a opção? '))
 
 if opção == 1:
     desconto = (preço * 10) / 100
@@ -431,16 +431,48 @@ elif opção == 4:
     if parcelas <= 2:
         print('O maximo é de 3x parcelas DESCULPE ')
 else:
-    print('OPÇÃO INVÁLIDA!')
-
-
-
-
-
-
-
-
-
-
-
-
+    print('OPÇÃO INVÁLIDA!')'''
+from random import randint
+itens = ['PEDRA', 'PAPEL', 'TESOURA']
+computador = randint(0, 2)
+print('Suas opções: ')
+print(''' 
+[ 0 ] PEDRA
+[ 1 ] PAPEL
+[ 2 ] TESOURA
+''')
+jogador = int(input('Qual é a sua jogada? '))
+if jogador < 0 or jogador > 2:
+    print('JOGADA INVÁLIDA ENCERRANDO o jogo!!!')
+    exit()
+print('-=' * 12)
+print(f'Computador jogou {itens[computador]}')
+print(f'Jogador jogou {itens[jogador]}')
+print('-=' * 12)
+if computador == 0: #Computador jogou PEDRA
+    if jogador == 0:
+        print('EMPATE')
+    elif jogador == 1:
+        print('JOGADOR VENCE')
+    elif jogador == 2:
+        print('COMPUTADOR VENCE')
+    else:
+        print('JOGADO INVÁLIDA')
+elif computador == 1: #Computador jogou PAPEL
+    if jogador == 1:
+        print('EMPATE')
+    elif jogador == 0:
+        print('COMPUTADOR VENCE')
+    elif jogador == 2:
+        print('JOGADOR VENCE')
+    else:
+        print('COMANDO INVÁLIDO')
+elif computador == 2: #Computador TESOURA
+    if jogador == 1:
+        print('COMPUTADOR VENCE')
+    elif jogador == 2:
+        print('EMPATE')
+    elif jogador == 0:
+        print('JOGADOR VENCE')
+    else:
+        print('JOGADA INVÁLIDA')
