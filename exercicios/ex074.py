@@ -432,7 +432,9 @@ elif opção == 4:
         print('O maximo é de 3x parcelas DESCULPE ')
 else:
     print('OPÇÃO INVÁLIDA!')'''
-from random import randint
+
+
+"""from random import randint
 itens = ['PEDRA', 'PAPEL', 'TESOURA']
 computador = randint(0, 2)
 print('Suas opções: ')
@@ -475,4 +477,91 @@ elif computador == 2: #Computador TESOURA
     elif jogador == 0:
         print('JOGADOR VENCE')
     else:
-        print('JOGADA INVÁLIDA')
+        print('JOGADA INVÁLIDA')"""
+
+
+
+
+"""print(f"{'===== LOJAS DA RERE SASAKI =====':<40}")
+preço = float(input('Preço das compras: R$'))
+print(f"{'-=-=-=- FORMAS DE PAGAMENTO -=-=-=-':<40}")
+print('''   
+[ 1 ] á vista dinheiro/cheque
+[ 2 ] á vista cartão
+[ 3 ] 2x no cartão
+[ 4 ] 3x ou mais no cartão  
+''')
+
+opção = int(input('Qual é a opção? '))
+if opção == 1:
+    desconto = (preço * 10) / 100
+    preço_final = preço - desconto
+    print(f'Sua compra de R${preço:.2f} vai custar R${preço_final:.2f} no final.')
+elif opção == 2:
+    desconto = (preço * 5) / 100
+    preço_final = preço - desconto
+    print(f'Sua compra de R${preço:.2f} vai custar R${preço_final:.2f} no final.')
+elif opção == 3:
+    parcela = (preço / 2)
+    print(f'Sua compra de R${preço:.2f} vai custar R${parcela} em 2 vezes SEM JUROS!')
+elif opção == 4:
+    parcela = int(input('Quantas parcelas? '))
+    if parcela >= 3:
+        juros = (preço * 20) / 100
+        juros_valor_final = preço + juros
+        parcelas = juros_valor_final / parcela
+        print(f'Sua compra está parcelada em {parcela}x de R${parcelas:.2f} COM JUROS.')
+        print(f'Sua compra de R${preço} vai custar R${juros_valor_final:.2f} no FINAL.')
+else:
+    print('COMANDO INVÁLIDO!!!')"""
+
+from time import sleep
+from random import randint
+
+computador = randint(0, 2)
+lista = ['PEDRA', 'PAPEL', 'TESOURA']
+print('Suas opções:')
+print('''
+      [ 0 ] PEDRA
+      [ 1 ] PAPEL
+      [ 2 ] TESOURA
+''')
+
+jogador = int(input('Qual é sua jogada? '))
+print('JO')
+print('KEN')
+print('PO!!!')
+sleep(1)
+print('-=' * 13)
+print(f'Computador jogou {lista[computador]}')
+print(f'Jogador jogou {lista[jogador]}')
+print('-=' * 13)
+
+if computador == 0: #PEDRA
+    if jogador == 0:
+        print('EMPATE!')
+    elif jogador == 1:
+        print('Jogador VENCE')
+    elif jogador == 2:
+        print('Computador VENCE')
+    else:
+        print('COMANDO INVÁLIDO')
+if computador == 1: #PAPEL
+    if jogador == 1:
+        print('EMPATE!')
+    elif jogador == 0:
+        print('Computador VENCE')
+    elif jogador == 2:
+        print('Jogador VENCE')
+    else:
+        print('COMANDO INVÁLIDO')
+elif computador == 2: #TESOURA
+    if jogador == 2:
+        print('EMPATE!')
+    elif jogador == 0:
+        print('Jogador VENCE')
+    elif jogador == 1:
+        print('Computador VENCE')
+    else:
+        print('COMANDO INVÁLIDO')
+    
