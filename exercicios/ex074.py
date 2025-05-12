@@ -565,3 +565,11 @@ elif computador == 2: #TESOURA
     else:
         print('COMANDO INVÁLIDO')
     
+
+
+
+
+
+
+
+    
