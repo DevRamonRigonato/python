@@ -515,7 +515,7 @@ elif opção == 4:
 else:
     print('COMANDO INVÁLIDO!!!')"""
 
-from time import sleep
+"""from time import sleep
 from random import randint
 
 computador = randint(0, 2)
@@ -563,11 +563,36 @@ elif computador == 2: #TESOURA
     elif jogador == 1:
         print('Computador VENCE')
     else:
-        print('COMANDO INVÁLIDO')
+        print('COMANDO INVÁLIDO')"""
     
+'''for c in range( 0, 110, 10):
+    print(c, end=' > ')
+print('fim')'''
 
 
+'''n = int(input('Digite um número: '))
+for c in range(0, n+1):
+    print(c)'''
 
+'''i = int(input('Início: '))
+f = int(input('Fim: '))
+p = int(input('Passo: '))
+for c in range(i, f+1, p):
+    print(c)
+print('FIM')'''
+
+'''s = 0
+for c in range(0, 4):
+    n = int(input('Digite um valor: '))
+    s += n
+print(f'O somatório de todos os valores foi {s}')'''
+
+
+from time import sleep
+for c in range(10, -1, -1):
+    print(c)
+    sleep(1)
+print('BUM! BUM! BUM!')
 
 
 
