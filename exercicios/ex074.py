@@ -588,11 +588,54 @@ for c in range(0, 4):
 print(f'O somatório de todos os valores foi {s}')'''
 
 
-from time import sleep
+'''from time import sleep
 for c in range(10, -1, -1):
     print(c)
     sleep(1)
-print('BUM! BUM! BUM!')
+print('BUM! BUM! BUM!')'''
+
+
+'''for c in range(2, 51, 2):
+    print(c, end=' ')
+print('ACABOU!!!')'''
+
+'''soma = 0
+cont = 0
+for c in range(1, 501, 2):
+    if c % 3 == 0:
+        cont += 1
+        soma += c
+print(f'A soma de todos os {cont} valores solicitados é {soma}')'''
+
+'''num = int(input('Digite um número para ver sua tabuada: '))
+for c in range(1, 11):
+    print(f'{num} x {c} = {num *c }')'''
+
+
+'''soma = 0
+cont = 0
+for c in range(1, 7):   
+    num = int(input(f'Digite o {c} valor: '))
+    if num % 2 == 0:
+        soma += num
+        cont += 1
+print(f'Você informou {cont} números PARES e a soma foi {soma}')'''
+
+primeiro = int(input('Primeiro termo: '))
+razão = int(input('Razão: '))
+décimo = primeiro + (10 -1) * razão
+for c in range(primeiro, décimo + razão, razão):
+    print(f'{c}', end='> ')
+print('ACABOU')
+
+
+
+
+       
+
+
+ 
+
 
 
 
