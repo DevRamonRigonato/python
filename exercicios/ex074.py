@@ -621,12 +621,42 @@ for c in range(1, 7):
         cont += 1
 print(f'Você informou {cont} números PARES e a soma foi {soma}')'''
 
-primeiro = int(input('Primeiro termo: '))
+'''primeiro = int(input('Primeiro termo: '))
 razão = int(input('Razão: '))
 décimo = primeiro + (10 -1) * razão
 for c in range(primeiro, décimo + razão, razão):
     print(f'{c}', end='> ')
-print('ACABOU')
+print('ACABOU')'''
+
+'''num = int(input('Digite um número: '))
+tot = 0
+for c in range(1, num + 1):
+    if num % c == 0:
+        print('\033[33m', end=' ')
+        tot += 1
+    else:
+        print('\033[31m', end=' ')
+    print(c, end=' ')
+print(f'\n\033[mO número {num} foi divisível {tot} vezes')'''
+
+frase = str(input('Digite uma frase: ')).strip().upper()
+palavras = frase.split()
+junto = ''.join(palavras)
+inverso = ''
+inverso = junto[::-1]
+'''for letra in range(len(junto) - 1, -1, -1):
+    inverso += junto[letra]'''
+print(f'O inverso de {junto} é {inverso}')
+if inverso == junto:
+    print('Temos um palíndromo!')
+else:
+    print('A frase digitada não é um palíndromo!')
+
+
+
+
+
+
 
 
 
