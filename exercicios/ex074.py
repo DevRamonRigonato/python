@@ -639,7 +639,7 @@ for c in range(1, num + 1):
     print(c, end=' ')
 print(f'\n\033[mO número {num} foi divisível {tot} vezes')'''
 
-frase = str(input('Digite uma frase: ')).strip().upper()
+""""frase = str(input('Digite uma frase: ')).strip().upper()
 palavras = frase.split()
 junto = ''.join(palavras)
 inverso = ''
@@ -650,24 +650,46 @@ print(f'O inverso de {junto} é {inverso}')
 if inverso == junto:
     print('Temos um palíndromo!')
 else:
-    print('A frase digitada não é um palíndromo!')
+    print('A frase digitada não é um palíndromo!')"""
 
+'''frase = str(input('Digite uma frase: ')).strip().upper()
+palavra = frase.split()
+junto = ''.join(palavra)
+inverso = ''
+inverso = junto[::-1]
+"""for letra in range(len(junto) -1, -1, -1):
+    inverso += junto[letra]"""
+print(f'O inverso de {junto} é {inverso}')
+if inverso == junto:
+    print('Temos um palindromo!')
+else:
+    print('Não é um palindromo!')'''
+'''from datetime import date
+atual = date.today().year
+totmaior = 0
+totmenor = 0
+for c in range(1, 8):
+    nasc = int(input(f'Em que ano a {c}° pessoa nasceu? '))
+    idade = atual - nasc
+    if idade >= 18:
+        totmaior += 1
+    else:
+        totmenor += 1
+print(f'Ao todo tivemos {totmaior} pessoas maiores de idade')
+print(f'E também tivemos {totmenor} pessoas menores de idade')'''
 
+peso_maior = 0
+peso_menor = 0
+for p in range(1, 6):
+    peso = float(input(f'Peso da {p}° pessoa: '))
+    if p == 1:
+        peso_maior = peso
+        peso_menor = peso
+    else:
+        if peso > peso_maior:
+            peso_maior = peso
+        if peso < peso_menor:
+            peso_menor = peso
+print(f'O mair peso lido foi de {peso_maior}Kg')
+print(f'O menor peso lido foi de {peso_menor}Kg')
 
-
-
-
-
-
-
-
-       
-
-
- 
-
-
-
-
-
-    
