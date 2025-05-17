@@ -693,3 +693,6 @@ for p in range(1, 6):
 print(f'O mair peso lido foi de {peso_maior}Kg')
 print(f'O menor peso lido foi de {peso_menor}Kg')
 
+
+
+
