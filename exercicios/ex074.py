@@ -678,7 +678,7 @@ for c in range(1, 8):
 print(f'Ao todo tivemos {totmaior} pessoas maiores de idade')
 print(f'E também tivemos {totmenor} pessoas menores de idade')'''
 
-peso_maior = 0
+'''peso_maior = 0
 peso_menor = 0
 for p in range(1, 6):
     peso = float(input(f'Peso da {p}° pessoa: '))
@@ -691,10 +691,31 @@ for p in range(1, 6):
         if peso < peso_menor:
             peso_menor = peso
 print(f'O mair peso lido foi de {peso_maior}Kg')
-print(f'O menor peso lido foi de {peso_menor}Kg')
+print(f'O menor peso lido foi de {peso_menor}Kg')'''
 
+'''soma_idades = 0
+maioridadehomem = 0
+nomevelho = ''
+totmulherdemenor = 0
+for p in range(1, 5):
+    print(f'---- {p}° PESSOA ---- ')
+    nome = str(input('Nome: ')).strip().upper()
+    idade = int(input('Idade: '))
+    sexo = str(input('Sexo [M/F]: ')).strip().upper()
+    soma_idades += idade
+    if p == 1 and sexo == 'M':
+        maioridadehomem = idade
+        nomevelho = nome
+    if sexo == 'M' and idade > maioridadehomem:
+        maioridadehomem = idade
+        nomevelho = nome
+    if sexo == 'F' and idade < 20:
+        totmulherdemenor += 1
 
-
-
+media_idade = soma_idades / 4
+   
+print(f'A média de idade do grupo é de {media_idade} anos')
+print(f'O homem mais velho tem {maioridadehomem} anos e se chama {nomevelho}')
+print(f'Ao todo são {totmulherdemenor} mulheres com menos de 20 anos')'''
 
 
