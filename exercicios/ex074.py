@@ -696,3 +696,5 @@ print(f'O menor peso lido foi de {peso_menor}Kg')
 
 
 
+
+
