@@ -693,29 +693,38 @@ for p in range(1, 6):
 print(f'O mair peso lido foi de {peso_maior}Kg')
 print(f'O menor peso lido foi de {peso_menor}Kg')'''
 
-'''soma_idades = 0
-maioridadehomem = 0
-nomevelho = ''
-totmulherdemenor = 0
+'''maioridadehomem = 0
+nome_velho = ''
+idade_média = 0
+totmenosde_vinte = 0
 for p in range(1, 5):
-    print(f'---- {p}° PESSOA ---- ')
+    print(f'{p}° ----- PESSOA -----')
     nome = str(input('Nome: ')).strip().upper()
     idade = int(input('Idade: '))
     sexo = str(input('Sexo [M/F]: ')).strip().upper()
-    soma_idades += idade
+    idade_média += idade
     if p == 1 and sexo == 'M':
         maioridadehomem = idade
-        nomevelho = nome
+        nome_velho = nome
     if sexo == 'M' and idade > maioridadehomem:
         maioridadehomem = idade
-        nomevelho = nome
+        nome_velho = nome
     if sexo == 'F' and idade < 20:
-        totmulherdemenor += 1
+        totmenosde_vinte += 1
+totidade_média = idade_média / 4
+print(f'A média de idade do grupo é de {totidade_média} anos')
+print(f'O homem mais velho tem {maioridadehomem} anos e se chama {nome_velho}')
+print(f'Ao todo são {totmenosde_vinte} mulheres com menos de 20 anos')'''
 
-media_idade = soma_idades / 4
-   
-print(f'A média de idade do grupo é de {media_idade} anos')
-print(f'O homem mais velho tem {maioridadehomem} anos e se chama {nomevelho}')
-print(f'Ao todo são {totmulherdemenor} mulheres com menos de 20 anos')'''
 
+'''n = 1
+par = impar = 0
+while n != 0:
+    n = int(input('Digite um valor: '))
+    if n != 0:
+        if n % 2 == 0:
+            par += 1 
+        else:
+            impar += 1
+print(f'Você digitou {par} números pares {impar} números ímpares!')'''
 
