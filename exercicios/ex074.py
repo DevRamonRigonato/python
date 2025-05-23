@@ -753,7 +753,7 @@ while not acertou:
             print('Menos... Tente mais uma vez. ')
 print(f'Acertou com {palpites} tentativas. Parabéns!')"""
 
-n1 = int(input('Primeiro valor: '))
+"""n1 = int(input('Primeiro valor: '))
 n2 = int(input('Segundo valor: '))
 opção = 0
 while opção != 5:
@@ -786,14 +786,13 @@ while opção != 5:
     else:
         print('Opção inválida. Tente novamente')
     print('=-=' * 10)
-print('Fim do programa! Volte sempre!')
+print('Fim do programa! Volte sempre!')"""
 
-   
-
-
-   
-
-   
-         
-
+'''soma = num = cont = 0
+num = int(input('Digite um número [999 para parar]: '))
+while num != 999:
+    soma += num
+    cont += 1
+    num = int(input('Digite um número [999 para parar]: '))
+print(f'Você digitou {cont} números e a soma entre eles foi {soma}')'''
 
