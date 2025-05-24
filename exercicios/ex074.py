@@ -813,3 +813,14 @@ while resp in 'Ss':
 media = soma / quant
 print(f'Você digitou {quant} números é a média foi {media}')
 print(f'O maior valor foi {maior} e o menor foi {menor}')'''
+
+
+
+
+
+
+
+
+
+
+
