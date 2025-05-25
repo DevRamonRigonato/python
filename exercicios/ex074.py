@@ -824,3 +824,15 @@ print(f'O maior valor foi {maior} e o menor foi {menor}')'''
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
