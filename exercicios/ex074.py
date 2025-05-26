@@ -814,25 +814,33 @@ media = soma / quant
 print(f'Você digitou {quant} números é a média foi {media}')
 print(f'O maior valor foi {maior} e o menor foi {menor}')'''
 
+'''n = s = 0
+while True:
+    n = int(input('Digite um número: '))
+    if n == 999:
+        break
+    s += n
+print(f'A soma vale {s}')'''
 
+'''n = 0
+s = 0
+cont = 0
+while True:
+    n = int(input('Digite um valor (999 para parar): '))
+    if n == 999:
+        break
+    cont += 1
+    s += n
+print(f'A soma dos {cont} valores foi {s}')'''
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+from time import sleep
+while True:
+    n = int(input('Quer ver a tabuada de qual valor? '))
+    if n < 0:
+        break
+    print('-' * 30)
+    for c in range(1, 11):
+        print(f'{n} x {c} = {n * c}')
+    print('-' * 30)
+sleep(1)
+print('PROGRAMA TABUADA ENCERRADO. Volte sempre!')
