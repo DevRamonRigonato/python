@@ -833,7 +833,7 @@ while True:
     s += n
 print(f'A soma dos {cont} valores foi {s}')'''
 
-from time import sleep
+'''from time import sleep
 while True:
     n = int(input('Quer ver a tabuada de qual valor? '))
     if n < 0:
@@ -843,4 +843,73 @@ while True:
         print(f'{n} x {c} = {n * c}')
     print('-' * 30)
 sleep(1)
-print('PROGRAMA TABUADA ENCERRADO. Volte sempre!')
+print('PROGRAMA TABUADA ENCERRADO. Volte sempre!')'''
+
+'''print('=-' * 13)
+print('VAMOS JOGAR PAR OU ÍMPAR')
+print('=-' * 13)
+
+from random import randint
+v = 0
+while True:
+    jogador = int(input('Diga um valor: '))
+    computador = randint(0, 10)
+    total = jogador + computador
+    tipo = ' '
+    while tipo not in 'PI':
+        tipo = str(input('Par ou Ímpar? [P/I] ')).strip().upper()[0]
+    print('-' * 25)
+    print(f'Você jogou {jogador} e o computador {computador}. Total de {total}', end=' ')
+    print('DEU PAR' if total % 2 == 0 else 'DEU ÍMPAR')
+    print('-' * 25)
+    if tipo == 'P':
+        if total % 2 == 0:
+            print('Você VENCEU!')
+            v += 1
+        else:
+            print('Você PERDEU!')
+            break
+    elif tipo == 'I':
+        if total % 2 == 1:
+            print('Você GANHOU!')
+            v += 1
+        else:
+            print('Você PERDEU!')
+            break
+        print('Vamos jogar novamente...')
+    print('-=' * 15)
+print('-=' * 15)
+print(f'GAME OVER! Você venceu {v} vezes')'''
+
+tot18 = totH = totM20 = 0
+while True:
+    idade = int(input('Idade: '))
+    sexo = ' '
+    while sexo not in 'MF':
+        sexo = str(input('Sexo: [M/F] ')).strip().upper()[0]
+    if idade >= 18:
+       tot18 += 1
+    if sexo == 'M':
+       totH += 1
+    if sexo == 'F' and idade < 20:
+       totM20 += 1
+    resp = ' '
+    while resp not in 'SN':
+     resp = str(input('Quer continuar? [S/N] ')).strip().upper()[0]
+    if resp == 'N':
+        break
+print(f'Total de pessoas com mais de 18 anos: {tot18}')
+print(f'Ao todo temos {totH} homens cadastrados.')
+print(f'E temos {totM20} mulheres com menos de 20 anos')
+
+       
+
+
+   
+        
+    
+   
+        
+    
+
+
