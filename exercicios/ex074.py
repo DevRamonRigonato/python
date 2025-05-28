@@ -881,35 +881,56 @@ while True:
 print('-=' * 15)
 print(f'GAME OVER! Você venceu {v} vezes')'''
 
-tot18 = totH = totM20 = 0
+'''tot18 = totH = totM20 = 0
 while True:
+    print('-' * 20)
+    print('CADASTRE UMA PESSOA')
+    print('-' * 20)
     idade = int(input('Idade: '))
     sexo = ' '
     while sexo not in 'MF':
         sexo = str(input('Sexo: [M/F] ')).strip().upper()[0]
-    if idade >= 18:
-       tot18 += 1
+    if idade > 18:
+        tot18 += 1
     if sexo == 'M':
-       totH += 1
+        totH += 1
     if sexo == 'F' and idade < 20:
-       totM20 += 1
+        totM20 += 1
     resp = ' '
     while resp not in 'SN':
-     resp = str(input('Quer continuar? [S/N] ')).strip().upper()[0]
+        resp = str(input('Quer continuar? [S/N] ')).strip().upper()[0]
     if resp == 'N':
         break
 print(f'Total de pessoas com mais de 18 anos: {tot18}')
-print(f'Ao todo temos {totH} homens cadastrados.')
-print(f'E temos {totM20} mulheres com menos de 20 anos')
+print(f'Ao todo temos {totH} homem cadastrado.')
+print(f'E temos {totM20} mulheres com menos de 20 anos.')'''
 
-       
+valor_total =  totprod = menor = cont = 0
+barato = ''
+while True:
+    print('-' * 20)
+    print('LOJA MON&RE')
+    print('-' * 20)
+    produto = str(input('Nome do produto: ')).strip().upper()
+    preço = float(input('Preço: RS$ '))
+    cont += 1
+    valor_total += preço
+    if preço > 1000:
+        totprod += 1
+    if cont == 1 or preço < menor:
+        menor = preço
+        barato = produto
+    resp = ' '
+    while resp not in 'SN':
+        resp = str(input('Quer continuar? [S/N] ')).strip().upper()[0]
+    if resp == 'N':
+        break
+print('-' * 20)
+print(f'{"FIM DO PROGRAMA":-^40}')
+print('-' * 20)
+print(f'O total da compra foi RS${valor_total:.2f}')
+print(f'Temos {totprod} produtos custando mais de R$1000.00')
+print(f'O produto mais barato foi {barato} e custa RS${menor:.2f}')
 
-
-   
         
     
-   
-        
-    
-
-
