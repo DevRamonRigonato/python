@@ -930,7 +930,4 @@ print(f'{"FIM DO PROGRAMA":-^40}')
 print('-' * 20)
 print(f'O total da compra foi RS${valor_total:.2f}')
 print(f'Temos {totprod} produtos custando mais de R$1000.00')
-print(f'O produto mais barato foi {barato} e custa RS${menor:.2f}')
-
-        
-    
+print(f'O produto mais caro foi {barato} e custa RS${menor:.2f}')
