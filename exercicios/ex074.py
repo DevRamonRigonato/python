@@ -905,29 +905,31 @@ print(f'Total de pessoas com mais de 18 anos: {tot18}')
 print(f'Ao todo temos {totH} homem cadastrado.')
 print(f'E temos {totM20} mulheres com menos de 20 anos.')'''
 
-valor_total =  totprod = menor = cont = 0
+totsoma = totmil = menor = cont = 0 
 barato = ''
 while True:
-    print('-' * 20)
-    print('LOJA MON&RE')
-    print('-' * 20)
-    produto = str(input('Nome do produto: ')).strip().upper()
-    preço = float(input('Preço: RS$ '))
+    print('-=' * 20)
+    print(f'{"LOJA s2 MON&RE":^40}')
+    print('-=' * 20)
+    produto = str(input('Nome do produto: '))
+    preço = float(input('Preço do produto: R$'))
     cont += 1
-    valor_total += preço
+    totsoma += preço
     if preço > 1000:
-        totprod += 1
+        totmil += 1
     if cont == 1 or preço < menor:
         menor = preço
         barato = produto
     resp = ' '
     while resp not in 'SN':
-        resp = str(input('Quer continuar? [S/N] ')).strip().upper()[0]
+        resp = str(input('Deseja continuar? [S/N] ')).strip().upper()[0]
     if resp == 'N':
         break
-print('-' * 20)
+print(f'O total da compra foi R${totsoma:.2f}')
+print(f'Temos {totmil} produtos custando mais de R$1.000.00')
+print(f'O produto mais barato foi {barato} e custa R${menor:.2f}')
+print('-=' * 20)
 print(f'{"FIM DO PROGRAMA":-^40}')
-print('-' * 20)
-print(f'O total da compra foi RS${valor_total:.2f}')
-print(f'Temos {totprod} produtos custando mais de R$1000.00')
-print(f'O produto mais caro foi {barato} e custa RS${menor:.2f}')
+print('-=' * 20)
+
+
