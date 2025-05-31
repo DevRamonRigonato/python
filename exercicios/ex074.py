@@ -905,7 +905,7 @@ print(f'Total de pessoas com mais de 18 anos: {tot18}')
 print(f'Ao todo temos {totH} homem cadastrado.')
 print(f'E temos {totM20} mulheres com menos de 20 anos.')'''
 
-totsoma = totmil = menor = cont = 0 
+'''totsoma = totmil = menor = cont = 0 
 barato = ''
 while True:
     print('-=' * 20)
@@ -930,6 +930,26 @@ print(f'Temos {totmil} produtos custando mais de R$1.000.00')
 print(f'O produto mais barato foi {barato} e custa R${menor:.2f}')
 print('-=' * 20)
 print(f'{"FIM DO PROGRAMA":-^40}')
-print('-=' * 20)
+print('-=' * 20)'''
 
 
+valor = int(input('Que valor você quer sacar? R$'))
+total = valor
+céd = 50
+totcéd = 0
+while True:
+    if total >= céd:
+        total -= céd # Verifica quantas vezes eu consigo tirar 50 do total
+        totcéd += 1
+    else:
+        if totcéd > 0: # Só vai escrever se o tolta de cédulas for maior que ZERO
+            print(f'Total de {totcéd} cédulas de R${céd}')
+        if céd == 50:
+            céd = 20
+        elif céd == 20:
+            céd = 10
+        elif céd == 10:
+            céd = 1
+        totcéd = 0 # Cada vez que muda a nota fazer totcéd = 0
+        if total == 0: # Se não estiver mais nada da um BREAK
+            break
