@@ -953,3 +953,22 @@ while True:
         totcéd = 0 # Cada vez que muda a nota fazer totcéd = 0
         if total == 0: # Se não estiver mais nada da um BREAK
             break
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
