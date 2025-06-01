@@ -933,26 +933,52 @@ print(f'{"FIM DO PROGRAMA":-^40}')
 print('-=' * 20)'''
 
 
-valor = int(input('Que valor você quer sacar? R$'))
+'''valor = int(input('Que valor você quer sacar? R$'))
 total = valor
 céd = 50
 totcéd = 0
 while True:
     if total >= céd:
-        total -= céd # Verifica quantas vezes eu consigo tirar 50 do total
+        total -= céd
         totcéd += 1
     else:
-        if totcéd > 0: # Só vai escrever se o tolta de cédulas for maior que ZERO
-            print(f'Total de {totcéd} cédulas de R${céd}')
+        if totcéd > 0:
+            print(f'O total de {totcéd} de R${céd}')
         if céd == 50:
             céd = 20
         elif céd == 20:
             céd = 10
         elif céd == 10:
             céd = 1
-        totcéd = 0 # Cada vez que muda a nota fazer totcéd = 0
-        if total == 0: # Se não estiver mais nada da um BREAK
-            break
+        totcéd = 0
+        if total == 0:
+            break'''
+totsoma = totmil = menor = cont = 0
+barato = ' '
+print(f'{"Super-MON-MON":=^30}')
+while True:
+    produto = str(input('Nome do produto: ')).strip().upper()
+    preço = float(input('Preço: R$'))
+    cont += 1
+    totsoma += preço
+    if preço > 1000:
+        totmil += 1
+    if cont == 1 or preço < menor:
+        menor = preço
+        barato = produto
+    resp = ' '
+    while resp not in 'SN':
+        resp = str(input('Quer continuar? [S/N]')).strip().upper()[0]
+    if resp == 'N':
+        break
+print(f'O total da compra foi de R${totsoma:.2f}')
+print(f'Temos {totmil} produto custando mais de 1000.00 ')
+print(f'O produto mais barato foi {produto} que custa R${menor}')
+
+
+
+     
+
 
 
 
