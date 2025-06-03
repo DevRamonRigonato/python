@@ -974,27 +974,4 @@ while True:
 print(f'O total da compra foi de R${totsoma:.2f}')
 print(f'Temos {totmil} produto custando mais de 1000.00 ')
 print(f'O produto mais barato foi {produto} que custa R${menor}')
-
-
-
      
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
