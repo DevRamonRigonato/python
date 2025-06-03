@@ -953,7 +953,7 @@ while True:
         totcéd = 0
         if total == 0:
             break'''
-totsoma = totmil = menor = cont = 0
+'''totsoma = totmil = menor = cont = 0
 barato = ' '
 print(f'{"Super-MON-MON":=^30}')
 while True:
@@ -973,5 +973,34 @@ while True:
         break
 print(f'O total da compra foi de R${totsoma:.2f}')
 print(f'Temos {totmil} produto custando mais de 1000.00 ')
-print(f'O produto mais barato foi {produto} que custa R${menor}')
-     
+print(f'O produto mais barato foi {produto} que custa R${menor}')'''
+
+'''lanche = ('hambúrger', 'Suco', 'Pizza', 'Pudim')
+print(lanche)'''
+
+'''lanche = ('Hambúrger', 'Suco', 'Pizza', 'Pudim', 'Batata')
+
+for comida in lanche:
+    print(f'Eu vou comer {comida}')
+
+for cont in range(0, len(lanche)):
+    print(f'Eu vou comer{lanche[cont]} na posição {cont}')
+
+for pos, comida in enumerate (lanche):
+    print(f'Eu adoro comer {comida} na posição {pos}')
+
+print('Cansei de tanto comer!')'''
+
+'''lanche = ('Hambúrger', 'Suco', 'Pizza', 'Pudim', 'Batata')
+print(sorted(lanche))
+print(lanche)'''
+
+'''a = (2, 5, 4)
+b = (5, 8, 1, 2)
+c = b + a
+print(c)
+print(c.index(5 , 1))'''
+
+pessoa = ('Ramon', 27, 'M', 100.00)
+del(pessoa)
+print(pessoa)
