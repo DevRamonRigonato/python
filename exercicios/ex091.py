@@ -1,4 +1,4 @@
-temp = []
+'''temp = []
 princ = []
 maiorpeso = menorpeso = 0
 while True:
@@ -29,4 +29,19 @@ print(f'O menor peso foi de {menorpeso}Kg. Peso de ', end='')
 for p in princ:
     if p[1] == menorpeso:
         print(f'[{p[0]}] ', end='')
-print()
+print()'''
+
+num = [[], []]
+valor = 0
+for c in range(1, 8):
+    valor = int(input(f'Digite o {c}°. valor: '))
+    if valor % 2 == 0:
+        num[0].append(valor)
+    else:
+        num[1].append(valor)
+print('-=' * 30)
+num[0].sort()
+num[1].sort()
+print(f'Os valores pares digitados foram: {num[0]}')
+print(f'Os valores Ímpares digitados foram: {num[1]}')
+    
