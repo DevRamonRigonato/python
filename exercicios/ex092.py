@@ -8,25 +8,3 @@ for l in range(0, 3):
         print(f'[{matriz[l][c]:^5}]', end='')
     print()
     
-
-
-
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
