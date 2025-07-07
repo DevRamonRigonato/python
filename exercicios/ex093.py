@@ -43,3 +43,10 @@ for c in range(0, 3):
     elif matriz[1][c] > maior:
         maior = matriz[1][c]
 print(f'O maior velor da segunda linha é {maior}')
+
+
+
+
+
+
+
