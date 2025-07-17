@@ -56,16 +56,33 @@ for nome in nomes:
 print(f'\nPessoa mais velha tem {maivelho} anos')
 print(f'Pessoa mais nova tem {mainovo} anos')'''
 
-nomes = []
+'''nomes = []
 idades = []
 
 for i in range(4):
-    nome = str(input('Digite o nome: ')).strip().upper()
+    nome = input('Digite o nome: ')
     idade = int(input('Digite a idade: '))
     nomes.append(nome)
     idades.append(idade)
+
+print('\n--- Lista de pessoas ---')
 for i in range(len(nomes)):
-    print(f'{nomes[i]} tem {idades[i]} anos.')
+    print(f'{nomes[i]} - {idades[i]} anos')
 
+# calcula e mostra média de idades
+media = sum(idades) / len(idades)
+print(f'\nMédia de idade: {media:.1f} anos')
 
-    
+# mostra quem tem 18 anos ou mais
+print('\nPessoas com 18 anos ou mais:')
+for i in range(len(idades)):
+    if idades[i] >= 18:
+        print(f'{nomes[i]} - {idades[i]} anos')
+
+for nome in nomes:
+    if len(nomes) <= 5:
+        print(nome)'''
+num = []
+for i in range(0,5):
+    num = int(input(f'Digite um valor para a Posição: {i}: '))
+print(f'Você digitou os valores {num[i]}')
