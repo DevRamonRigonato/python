@@ -119,7 +119,7 @@ for c in range(7):
 print(f'Pares: {pares}')
 print(f'Ímpares: {impares}')'''
 
-numlista = []
+'''numlista = []
 while True:
     valor = int(input('Digite um valor: '))
     if valor in numlista:
@@ -132,4 +132,19 @@ while True:
     if resp == 'N':
         break
 numlista.sort()
-print(numlista)
+print(numlista)'''
+
+'''numeros = list()
+while True:
+    valor = int(input('Digite um valor: '))
+    if valor not in numeros:
+        numeros.append(valor)
+        print('Valor adicionado com sucesso...')
+    else:
+        print('Valor duplicado! Não vou adicionar...')
+    resp = ' '
+    while resp not in 'SN':
+        resp = str(input('Deseja continuar? [S/N]: ')).strip().upper()[0]
+    if resp == 'N':
+        break
+print(numeros)'''
