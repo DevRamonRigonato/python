@@ -148,3 +148,37 @@ while True:
     if resp == 'N':
         break
 print(numeros)'''
+
+'''lista = list()
+for c in range(0, 5):
+    n = int(input('Digite um valor: '))
+    if c == 0 or n > lista[-1]:
+        lista.append(n)
+        print('Adicionado ao final da lista...')
+    else:
+        pos = 0
+        while pos < len(lista):
+            if n <= lista[pos]:
+                lista.insert(pos, n)
+                print(f'Adicionado na posição {pos} da lista...')
+                break
+            pos += 1
+print('-=' * 30)
+print(f'Os valores digitados em ordem foram {lista}')'''
+
+lista = []
+while True:
+    lista.append(int(input('Digite um valor: ')))
+    resp = ' '
+    while resp not in 'SN':
+        resp = str(input('Deseja continuar? [S/N]: ')).strip().upper()[0]
+    if resp == 'N':
+        break
+print(f'Você digitou {len(lista)} elementos')
+lista.sort(reverse=True)
+print(f'Os valores em ordem decrescente são {(lista)}')
+if 5 in lista:
+    print('O valor 5 faz parte da lista!')
+else:
+    print('O valor 5 não foi encontrado na lista!')
+
