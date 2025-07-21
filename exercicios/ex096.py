@@ -166,7 +166,7 @@ for c in range(0, 5):
 print('-=' * 30)
 print(f'Os valores digitados em ordem foram {lista}')'''
 
-lista = []
+'''lista = []
 while True:
     lista.append(int(input('Digite um valor: ')))
     resp = ' '
@@ -180,5 +180,45 @@ print(f'Os valores em ordem decrescente são {(lista)}')
 if 5 in lista:
     print('O valor 5 faz parte da lista!')
 else:
-    print('O valor 5 não foi encontrado na lista!')
+    print('O valor 5 não foi encontrado na lista!')'''
+
+'''lista = []
+pares = []
+impares = []
+while True:
+    valor = int(input('Digite um número: '))
+    
+    if valor % 2 == 0:
+        pares.append(valor)
+    else:
+        impares.append(valor)
+    lista.append(valor)
+    resp = ' '
+    while resp not in 'SN':
+        resp = str(input('Quer continuar? [S/N]: ')).strip().upper()[0]
+    if resp == 'N':
+        break   
+lista.sort(reverse=True)
+pares.sort()
+impares.sort()
+print(f'A lista completa é {lista}')
+print(f'A lista de pares é {pares}')
+print(f'A lista de ímpares é {impares}')'''
+
+expr = str(input('Digite a expressão: '))
+pilha = []
+for símb in expr:
+    if símb == '(':
+        pilha.append('(')
+    elif símb == ')':
+        if len(pilha) > 0:
+            pilha.pop()
+        else:
+            pilha.append(')')
+            break
+if len(pilha) == 0:
+    print('Sua expressão está válida!')
+else:
+    print('Sua expressão está errada!')
+
 
