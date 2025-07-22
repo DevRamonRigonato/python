@@ -205,7 +205,7 @@ print(f'A lista completa é {lista}')
 print(f'A lista de pares é {pares}')
 print(f'A lista de ímpares é {impares}')'''
 
-expr = str(input('Digite a expressão: '))
+'''expr = str(input('Digite a expressão: '))
 pilha = []
 for símb in expr:
     if símb == '(':
@@ -219,6 +219,42 @@ for símb in expr:
 if len(pilha) == 0:
     print('Sua expressão está válida!')
 else:
-    print('Sua expressão está errada!')
+    print('Sua expressão está errada!')'''
+
+'''teste = list()
+teste.append('Ramon')
+teste.append(26)
+galera = list()
+galera.append(teste[:])
+teste[0] = 'Maria'
+teste[1] = 22
+galera.append(teste[:])
+print(galera)'''
+
+'''galera = [['João', 19], ['Ana', 33], ['Joaquim', 13], ['Maria', 45]]
+for p in (galera):
+    print(f'{p[0]} tem {p[1]} anos de idade.')'''
+
+galera = []
+dados = []
+totmai = totmen = 0
+for c in range(0, 3):
+    dados.append(str(input('Nome: ')))
+    dados.append(int(input('Idade: ')))
+    galera.append(dados[:])
+    dados.clear()
+for p in galera:
+    if p[1] > 18:
+        print(f'{p[0]} é maior idade.')
+        totmai += 1
+    else:
+        print(f'{p[0]} é menor de idade.')
+        totmen += 1
+print(f'Ao todo temos {totmai} maior de idade e {totmen} menor de idade.')
+
+
+
+
+
 
 
