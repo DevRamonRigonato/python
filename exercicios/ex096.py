@@ -235,7 +235,7 @@ print(galera)'''
 for p in (galera):
     print(f'{p[0]} tem {p[1]} anos de idade.')'''
 
-galera = []
+'''galera = []
 dados = []
 totmai = totmen = 0
 for c in range(0, 3):
@@ -250,11 +250,51 @@ for p in galera:
     else:
         print(f'{p[0]} é menor de idade.')
         totmen += 1
-print(f'Ao todo temos {totmai} maior de idade e {totmen} menor de idade.')
+print(f'Ao todo temos {totmai} maior de idade e {totmen} menor de idade.')'''
 
+'''galera = []
+dados = []
+mai = men = 0
+while True:
+    dados.append(str(input('Nome: ')))
+    dados.append(float(input('Peso: ')))
+    if len(galera) == 0:
+        mai = men = dados[1]
+    else:
+        if dados[1] > mai:
+            mai = dados[1]
+        if dados[1] < men:
+            men = dados[1]
+    galera.append(dados[:])
+    dados.clear()
 
+    resp = ' '
+    while resp not in 'SN':
+        resp = str(input('Deseja continuar? [S/N] ')).strip().upper()[0]
+    if resp == 'N':    
+        break
 
+print(f'Ao todo, você cadastrou {len(galera)} pessoas.')
+print(f'O maior peso foi de {mai}.Kg ',end='')
+for p in galera:
+    if p[1] == mai:
+        print(f'[{p[0]}] ',end='')
+print()
+print(f'O menor peso foi de {men}.Kg ', end='')
+for p in galera:
+    if p[1] == men:
+        print(f'[{p[0]}] ', end='')
+print()'''
 
+num = [[], []]
 
-
-
+for c in range(0, 7):
+    valor  = int(input(f'Digite o {c+1}°. valor: '))
+    if valor % 2 == 0:
+        num[0].append(valor)
+    else:
+        num[1].append(valor)
+num[0].sort()
+print(f'Os valores pares digitados foram {num[0]}')
+num[1].sort()
+print(f'Os valores impares digitados foram {num[1]}')
