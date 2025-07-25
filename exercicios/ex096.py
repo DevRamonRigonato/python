@@ -324,34 +324,33 @@ for c in range(0, 3):
         mai = matriz[1][c]
 print(f'O maior valor da segunda linha é {mai}.')'''
 
-matriz = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
-linhasoma =  maior = 0
-# 1. Preencher
-for l in range(3):
-    for c in range(3):
+'''matriz = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
+somapar =  scol =  maiorl = 0
+for l in range(0, 3):
+    for c in range(0, 3):
         matriz[l][c] = int(input(f'Digite um valor para [{l}, {c}]: '))
-
-# 2. Mostrar formatada
-print('-=' * 20)
-for linha in matriz:
-    for valor in linha:
-        print(f'[{valor:^5}]', end='')
+for l in range(0, 3):
+    for c in range(0, 3):
+        if matriz[l][c] % 2 == 0:
+            somapar += matriz[l][c]
+        print(f'[{matriz[l][c]:^5}]', end='')
     print()
 print('-=' * 20)
+print(f'A soma dos pares é {somapar}.')
+print('-=' * 20)
 
-for c in range(0, 3):
-    linhasoma += matriz[0][c]
-print(f'A soma dos valores da primeira linha é {linhasoma}')
-print('Valores da segunda coluna:', end=' ')
 for l in range(0, 3):
-    print(f'Valor da segunda coluna na linha {l}: {matriz[l][1]}')
-for c in range(0, 3):
-    if matriz[2][c] == 0:
-        maior = matriz[2][c]
-    elif matriz[2][c] > maior:
-        maior = matriz[2][c]
-print(f'O maior número da terceira linha é {maior}')
+    print(f'Na posição: [{l}]')
+    scol += matriz[l][2]
+print(f'A soma da terceira coluna é {scol}.')
+print('-=' * 20)
 
+for c in range(0, 3):
+    if c == 0:
+        maiorl = matriz[1][c]
+    elif matriz[1][c] > maiorl:
+        maiorl = matriz[1][c]
+print(f'O maior valor da segunda linha é {maiorl}.')'''
 
 
 
