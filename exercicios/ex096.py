@@ -324,8 +324,8 @@ for c in range(0, 3):
         mai = matriz[1][c]
 print(f'O maior valor da segunda linha é {mai}.')'''
 
-'''matriz = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
-somapar =  scol =  maiorl = 0
+matriz = [[0, 0, 0], [0, 0, 0], [0, 0, 0,]]
+somapar = scol = mai = 0
 for l in range(0, 3):
     for c in range(0, 3):
         matriz[l][c] = int(input(f'Digite um valor para [{l}, {c}]: '))
@@ -336,21 +336,16 @@ for l in range(0, 3):
         print(f'[{matriz[l][c]:^5}]', end='')
     print()
 print('-=' * 20)
-print(f'A soma dos pares é {somapar}.')
+print(f'A soma de todos os pares é {somapar}')
 print('-=' * 20)
-
 for l in range(0, 3):
-    print(f'Na posição: [{l}]')
     scol += matriz[l][2]
-print(f'A soma da terceira coluna é {scol}.')
+print(f'A soma da terceira coluna é {scol}')
 print('-=' * 20)
-
 for c in range(0, 3):
-    if c == 0:
-        maiorl = matriz[1][c]
-    elif matriz[1][c] > maiorl:
-        maiorl = matriz[1][c]
-print(f'O maior valor da segunda linha é {maiorl}.')'''
-
-
-
+    if matriz [1][c] == 0:
+        mai = matriz[1][c]
+    elif matriz[1][c] > mai:
+        mai = matriz[1][c]
+print(f'O maior valor da segunda linha é {mai}')
+    
