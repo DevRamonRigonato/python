@@ -324,7 +324,7 @@ for c in range(0, 3):
         mai = matriz[1][c]
 print(f'O maior valor da segunda linha é {mai}.')'''
 
-matriz = [[0, 0, 0], [0, 0, 0], [0, 0, 0,]]
+'''matriz = [[0, 0, 0], [0, 0, 0], [0, 0, 0,]]
 somapar = scol = mai = 0
 for l in range(0, 3):
     for c in range(0, 3):
@@ -347,5 +347,21 @@ for c in range(0, 3):
         mai = matriz[1][c]
     elif matriz[1][c] > mai:
         mai = matriz[1][c]
-print(f'O maior valor da segunda linha é {mai}')
+print(f'O maior valor da segunda linha é {mai}')'''
     
+
+from random import randint
+lista = []
+print('-' * 30)
+print('      JOGA NA MEGA SENA      ')
+print('-' * 30)
+cont = 0
+while True:
+    num = randint(1, 60)
+    if num not in lista:
+        lista.append(num)
+        cont += 1
+    if cont >= 6:
+        break
+lista.sort()
+print(lista)
