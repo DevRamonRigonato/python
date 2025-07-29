@@ -348,20 +348,59 @@ for c in range(0, 3):
     elif matriz[1][c] > mai:
         mai = matriz[1][c]
 print(f'O maior valor da segunda linha é {mai}')'''
-    
 
-from random import randint
+'''from random import randint
+from time import sleep
 lista = []
+jogos = []
 print('-' * 30)
-print('      JOGA NA MEGA SENA      ')
+print('      JOGA NA MEGA SENA     ')
 print('-' * 30)
-cont = 0
+quant = int(input('Quantos jogos voçê quer que eu sorteie? '))
+tot = 1
+while tot <= quant:
+    cont = 0
+    while True:
+        num = randint(1, 60)
+        if num not in lista:
+            lista.append(num)
+            cont += 1
+        if cont >= 6:
+            break
+    lista.sort()
+    jogos.append(lista[:])
+    lista.clear()
+    tot += 1
+print('-=' * 3, f' SORTEANDO {quant} JOGOS ', '-=' * 3)
+for i, l in enumerate(jogos):
+    print(f'Jogo {i+1}: {l}')
+    sleep(1)
+print('-=' * 5, '< BOA SORTE! >', '-=' * 5)'''
+
+ficha = list()
 while True:
-    num = randint(1, 60)
-    if num not in lista:
-        lista.append(num)
-        cont += 1
-    if cont >= 6:
+    nome = str(input('Nome: '))
+    nota1 = float(input('Nota 1: '))
+    nota2 = float(input('Nota 2: '))
+    media = (nota1 + nota2) / 2
+    ficha.append([nome, [nota1, nota2], media])
+    
+    resp = ' '
+    while resp not in 'SN':
+        resp = str(input('Deseja continuar? [S/N]: ')).strip().upper()[0]
+    if resp == 'N':
         break
-lista.sort()
-print(lista)
+print('-=' * 30)
+print(f'{"No.":<4}{"NOME":<10}{"MÉDIA":>8}')
+print('-' * 26)
+for i, a in enumerate(ficha):
+    print(f'{i:<4}{a[0]:<10}{a[2]:>8.1f}')
+while True:
+    print('-=' * 35)
+    opc = int(input('Mostrar notas de qual aluno? (999 interrompe): '))
+    if opc == 999:
+        print('FINALIZANDO...')
+        break
+    if opc <= len(ficha) - 1:
+        print(f'Notas de {ficha[opc][0]} são {ficha[opc][1]}')
+print('<<< VOLTE SEMPRE >>>')
