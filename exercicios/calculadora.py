@@ -46,3 +46,5 @@ def escolher_palavra_por_dificuldade():
 # Exemplo de como usar a função no seu jogo principal:
 # palavra_secreta = escolher_palavra_por_dificuldade().lower()
 # print(f"A palavra escolhida para o jogo tem {len(palavra_secreta)} letras.")
+yield
+
